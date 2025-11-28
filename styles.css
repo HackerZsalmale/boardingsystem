@@ -1,0 +1,65 @@
+:root {
+    --body-background: rgb(73, 73, 73);
+    --font-family: Poppins, sans-serif;
+}
+
+* {
+    font-family: var(--font-family);
+}
+
+body {
+    background-color: var(--body-background);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.whole {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#whole input {
+    height: 60px;
+    width: 430px;
+    border-radius: 12px;
+    text-align: center;
+    border: 3px solid black
+}
+
+#whole #passengername {
+    margin-top: 20px;
+}
+
+#whole input::after {
+    border: 3px solid lime;
+}
+
+#whole select {
+    width: 430px;
+    height: 60px;
+    border-radius: 17px;
+    border: 3px solid black;
+}
+
+#whole button {
+    height: 70px;
+    width: 230px;
+    border-radius: 17px;
+    border: 3px solid black;
+    margin-bottom: 20px;
+}
+
+
+#whole {
+    background-color: rgb(112, 112, 112);
+    width: 50%;
+    height: 80%;
+    border-radius: 17px;
+}
