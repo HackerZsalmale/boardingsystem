@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="loadbutton" onclick="loaddata()" style="display: none";>Want to load the saved data?</button>
+    <div class="whole" id="whole">
+      <input type="text" id="passengername" placeholder="Name" />
+      <input type="text" id="flightnumber" placeholder="Flight Number" />
+      <input type="text" id="from" placeholder="From" />
+      <input type="text" id="to" placeholder="To" />
+      <input type="date" name="idk" id="idk" />
+      <input type="time" id="time" />
+      <input type="text" id="gate" placeholder="Gate" />
+      <select id="seat">
+        <option value="">Select seat</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+      </select>
+      <select id="class">
+        <option value="">Select class</option>
+        <option value="Economy">Economy</option>
+        <option value="Business">Business</option>
+        <option value="First">First</option>
+      </select>
+      <select id="boardinggroup">
+        <option value="">Select boarding group</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+      <button id="generate" onclick="submit()">Generate Passport</button>
+      <div class="ticket" id="ticket" style="display: none;">
+        <h2>Boarding Pass</h2>
+        <p id="bpname">Name: </p>
+        <p id="bpflightnumber">Flight Number: </p>
+        <p id="bpfrom">From: </p>
+        <p id="bpto">To: </p>
+        <p id="bpdate">Date: </p>
+        <p id="bptime">Time: </p>
+        <p id="bpgate">Gate: </p>
+        <p id="bpseat">Seat: </p>
+        <p id="bpclass">Class: </p>
+        <p id="bpboardinggroup">Boarding Group: </p>
+        <p id="bpbarcode"></p>
+        </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
